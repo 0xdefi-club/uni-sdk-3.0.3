@@ -4,10 +4,10 @@ import JSBI from 'jsbi'
 export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
-  MAINNET = 1,
-  BLAST = 81457,
+  // MAINNET = 1,
+  // BLAST = 81457,
   TAIKO = 167000,
-  ARBITRUM_SEPOLIA = 421614,
+  // ARBITRUM_SEPOLIA = 421614,
   BASE_SEPOLIA = 84532
 }
 
@@ -22,7 +22,13 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd'
+export const FACTORY_ADDRESS = '0x2EA9051d5a48eA2350b26306f2b959D262cf67e1' //Taiko
+// export const FACTORY_ADDRESS = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd' //base sepolia
+
+export const FACTORY_ADDRESS_MAP = {
+  [ChainId.TAIKO]: '0x2EA9051d5a48eA2350b26306f2b959D262cf67e1',
+  [ChainId.BASE_SEPOLIA]: '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd'
+}
 
 export const INIT_CODE_HASH = '0x8615843ab28b4b86b2382dca22cf14f0a6ba9e52cb006531eb574042a5b54a46'
 
