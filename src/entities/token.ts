@@ -72,5 +72,12 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped Ether'
+  ),
+  [ChainId.BASE_SEPOLIA]: new Token(
+    ChainId.BASE_SEPOLIA,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether'
   )
 }
