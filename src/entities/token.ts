@@ -57,25 +57,25 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 }
 
 export const WETH = {
-  // [ChainId.MAINNET]: new Token(
-  //   ChainId.MAINNET,
-  //   '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
-  //   18,
-  //   'WETH',
-  //   'Wrapped Ether'
-  // ),
-  // [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.TAIKO]: new Token(ChainId.TAIKO, '0xA51894664A773981C6C112C43ce576f315d5b1B6', 18, 'WETH', 'Wrapped Ether'),
-  // [ChainId.ARBITRUM_SEPOLIA]: new Token(
-  //   ChainId.ARBITRUM_SEPOLIA,
-  //   '0x980B62Da83eFf3D4576C647993b0c1D7faf17c73',
-  //   18,
-  //   'WETH',
-  //   'Wrapped Ether'
-  // ),
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(
+    ChainId.ARBITRUM_SEPOLIA,
+    '0x980B62Da83eFf3D4576C647993b0c1D7faf17c73',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
   [ChainId.BASE_SEPOLIA]: new Token(
     ChainId.BASE_SEPOLIA,
-    '0x4200000000000000000000000000000000000006',
+    '0x6267947C818ff3900F620FC97d590702afB69147',
     18,
     'WETH',
     'Wrapped Ether'
